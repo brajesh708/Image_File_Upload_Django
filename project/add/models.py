@@ -5,7 +5,7 @@ from .validators import *
 
 class ItemInfo(models.Model):
     item_id = models.AutoField(primary_key=True)
-    item_name = models.CharField(max_length=255, validators=[validate_item_name])
+    item_name = models.CharField(max_length=255)
     item_description = models.TextField()
     item_price = models.DecimalField(max_digits=10, decimal_places=2)
     item_image = models.ImageField(upload_to='item_images')
