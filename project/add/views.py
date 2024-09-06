@@ -20,5 +20,5 @@ def cart(request):
     print(request.POST)
     
     
-def addtocart(request):
+def addtocard(request):
     print(request.POST)
