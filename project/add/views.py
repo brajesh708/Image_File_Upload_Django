@@ -10,7 +10,7 @@ def home(request):
     if request.method=="POST":
         form = ItemInfoForm(request.POST,request.FILES)
         if form.is_vaild():
-            form.save()
+           form.save()
     
     data = ItemInfo.objects.all()
     return render(request,"home.html",{'form':form,'data':data})
